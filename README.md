@@ -58,17 +58,17 @@ Isso garante que os dados dos livros estejam associados corretamente aos autores
 
 ```sql
 CREATE TABLE IF NOT EXISTS book(
-    id int NOT NULL AUTO_INCREMENT,
-    title varchar(50) NOT NULL,
-    year_published int NOT NULL,
-    author_id int NOT NULL,
-    category_id int NOT NULL, 
-    publisher_id int NOT NULL,
-    
-    PRIMARY KEY (id),
-    FOREIGN KEY (author_id) REFERENCES author(id),
-    FOREIGN KEY (category_id) REFERENCES category(id),
-    FOREIGN KEY (publisher_id) REFERENCES publisher(id)
+	id int NOT NULL AUTO_INCREMENT,
+	title varchar(50) NOT NULL,
+	year_published int NOT NULL,
+	author_id int NOT NULL,
+	category_id int NOT NULL, 
+	publisher_id int NOT NULL,
+	
+	PRIMARY KEY (id),
+	FOREIGN KEY (author_id) REFERENCES author(id),
+	FOREIGN KEY (category_id) REFERENCES category(id),
+	FOREIGN KEY (publisher_id) REFERENCES publisher(id)
 );
 ```
 
@@ -78,15 +78,15 @@ Como um bônus, a tabela de transações é um histórico de todos os livros emp
 
 ```sql
 CREATE TABLE IF NOT EXISTS transactions(
-    id int NOT NULL AUTO_INCREMENT,
-    student_id int NOT NULL,
-    book_id int NOT NULL,
-    taken_date date NOT NULL,
-    brought_date date NOT NULL,
-    
-    PRIMARY KEY (id),
-    FOREIGN KEY (book_id) REFERENCES book(id),
-    FOREIGN KEY (student_id) REFERENCES student(id)
+	id int NOT NULL AUTO_INCREMENT,
+	student_id int NOT NULL,
+	book_id int NOT NULL,
+	taken_date date NOT NULL,
+	brought_date date NOT NULL,
+	
+	PRIMARY KEY (id),
+	FOREIGN KEY (book_id) REFERENCES book(id),
+	FOREIGN KEY (student_id) REFERENCES student(id)
 );
 ```
 
