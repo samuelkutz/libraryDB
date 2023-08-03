@@ -44,17 +44,7 @@ CREATE TABLE IF NOT EXISTS student(
 
 ## Tabela `book`
 
-#### Já a tabela `book` é a tabela principal do sistema, responsável por armazenar informações sobre os livros disponíveis na biblioteca. 
-
-* `id`: chave primária e autoincrementada (assim como todas as outras)
-
-* `title`: título do livro
-
-* `year_published`: o ano de publicação do livro
-  
-* `author_id`, `category_id` e `publisher_id`: chaves estrangeiras referenciando as tabelas `author`, `category` e `publisher`, respectivamente
-
-Isso garante que os dados dos livros estejam associados corretamente aos autores, categorias e editoras correspondentes.
+Já a tabela `book` é a tabela principal do sistema, responsável por armazenar informações sobre os livros disponíveis na biblioteca. 
 
 ```sql
 CREATE TABLE IF NOT EXISTS book(
@@ -71,6 +61,16 @@ CREATE TABLE IF NOT EXISTS book(
 	FOREIGN KEY (publisher_id) REFERENCES publisher(id)
 );
 ```
+
+* `id`: chave primária e autoincrementada (assim como todas as outras)
+
+* `title`: título do livro
+
+* `year_published`: o ano de publicação do livro
+  
+* `author_id`, `category_id` e `publisher_id`: chaves estrangeiras referenciando as tabelas `author`, `category` e `publisher`, respectivamente
+
+Essas chaves estrangeiras garantem que os dados dos livros estejam associados corretamente aos autores, categorias e editoras correspondentes.
 
 ## Tabela `transactions`
 
@@ -89,8 +89,6 @@ CREATE TABLE IF NOT EXISTS transactions(
 	FOREIGN KEY (student_id) REFERENCES student(id)
 );
 ```
-
-A tabela `transactions` é utilizada para registrar as transações de empréstimo de livros para os alunos. Ela possui uma coluna `id` como chave primária e autoincrementada, além de duas colunas `student_id` e `book_id` que são chaves estrangeiras, referenciando as tabelas `student` e `book`, respectivamente. As colunas `taken_date` e `brought_date` armazenam as datas de retirada e devolução dos livros, ambas obrigatórias (NOT NULL).
 
 * `id`: chave primária e autoincrementada (assim como todas as outras)
 
