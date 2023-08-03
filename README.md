@@ -1,6 +1,6 @@
 # README - libraryDB
 
-libraryDB é um exemplo de um modelo de banco de dados relacional para catálogar livros de uma escola.
+libraryDB é um exemplo de um modelo de banco de dados relacional para catalogar livros.
 
 ## Criação do Banco de Dados
 
