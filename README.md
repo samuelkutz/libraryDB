@@ -4,7 +4,7 @@ libraryDB é um exemplo de um modelo de banco de dados relacional para catalogar
 
 ## Como Executar o Projeto usando o [MySQL Workbench](https://www.mysql.com)?
 **Abrir o MySQL Workbench:**
-   Inicie o MySQL Workbench em seu computador. Se você ainda não o instalou, você pode baixá-lo no site oficial do MySQL.
+   Inicie o MySQL Workbench em seu computador. Se você ainda não o instalou, você pode baixá-lo no site oficial do MySQL [aqui](https://dev.mysql.com/downloads/workbench/).
 
 **Conectar ao Servidor MySQL:**
    - Clique no menu "Database" (Banco de Dados) no topo do MySQL Workbench.
