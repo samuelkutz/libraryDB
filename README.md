@@ -2,7 +2,16 @@
 
 libraryDB é um exemplo de um modelo de banco de dados relacional para catalogar livros.
 
-## Criação do Banco de Dados
+## Como Executar o Projeto usando o [MySQL Workbench](https://www.mysql.com)?
+**Abrir o MySQL Workbench:**
+   Inicie o MySQL Workbench em seu computador. Se você ainda não o instalou, você pode baixá-lo no site oficial do MySQL.
+
+**Conectar ao Servidor MySQL:**
+   - Clique no menu "Database" (Banco de Dados) no topo do MySQL Workbench.
+   - Selecione "Connect to Database..." (Conectar ao Banco de Dados...)
+   - Insira os detalhes de conexão necessários, como nome do host, porta, nome de usuário e senha, para conectar ao seu servidor MySQL.
+
+## Criando o Banco de Dados
 
 ```sql
 CREATE DATABASE IF NOT EXISTS Library;
