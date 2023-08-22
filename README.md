@@ -2,7 +2,7 @@
 
 libraryDB é um exemplo de um modelo de banco de dados relacional para catalogar livros.
 
-Caso se interesse, aqui está o link para o [diagram](github.com/samuelkutz/libraryDB/edit/main/docs/diagram_library.pdf) :D
+Caso se interesse, aqui está o link para o [diagram](docs/diagram_library.pdf) :D
 
 ## Como Executar o Projeto usando o [MySQL Workbench](https://www.mysql.com)?
 **Abrir o MySQL Workbench:**
